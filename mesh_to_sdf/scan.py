@@ -1,8 +1,8 @@
 import numpy as np
-from .pyrender_wrapper import render_normal_and_depth_buffers
+from pyrender_wrapper import render_normal_and_depth_buffers
 import pyrender
 from scipy.spatial.transform import Rotation
-from skimage import io
+# from skimage import io
 
 def get_rotation_matrix(angle, axis='y'):
     matrix = np.identity(4)
